@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<meta
+    name="description"
+    content="About Robert Carter and contact information for web development projects."
+>
+
+<title>Robert Carter | About & Contact</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+```
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+```
+<nav class="navbar" aria-label="Main navigation">
+
+    <a class="logo" href="index.html">
+        Robert Carter
+    </a>
+
+    <button
+        id="menuButton"
+        class="menu-button"
+        type="button"
+        aria-expanded="false"
+        aria-controls="navLinks"
+        aria-label="Open navigation menu">
+
+        <span aria-hidden="true">☰</span>
+        <span class="menu-button-text">Menu</span>
+
+    </button>
+
+    <ul id="navLinks" class="nav-links">
+
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+
+        <li>
+            <a href="projects.html">Projects</a>
+        </li>
+
+        <li>
+            <a
+                class="active"
+                aria-current="page"
+                href="about.html">
+                About / Contact
+            </a>
+        </li>
+
+    </ul>
+
+</nav>
+```
+
+</header>
+
+<main>
+
+```
+<section class="page-heading">
+
+    <div class="container">
+
+        <p class="eyebrow">About Me</p>
+
+        <h1>About Robert Carter</h1>
+
+        <p class="lead">
+            I am a web developer interested in creating practical,
+            accessible, and responsive websites.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="section" aria-labelledby="story-title">
+
+    <div class="container about-grid">
+
+        <article>
+
+            <h2 id="story-title">
+                My Story
+            </h2>
+
+            <p>
+                My interest in web development grew from working
+                with online Madden communities and seeing how
+                difficult it could be to organize league information
+                through Discord alone.
+            </p>
+
+            <p>
+                That experience gave me an opportunity to combine
+                problem solving with web development. I began
+                creating websites that organize schedules,
+                statistics, and other information in one location.
+            </p>
+
+            <p>
+                I enjoy working with HTML, CSS, and JavaScript and
+                continue improving my skills by building projects
+                that solve practical problems.
+            </p>
+
+        </article>
+
+        <aside class="card">
+
+            <h2>Skills</h2>
+
+            <ul class="feature-list">
+
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Responsive Web Design</li>
+                <li>Accessibility</li>
+                <li>GitHub Pages</li>
+
+            </ul>
+
+        </aside>
+
+    </div>
+
+</section>
+
+<section class="section section-alt" aria-labelledby="contact-title">
+
+    <div class="container contact-grid">
+
+        <div>
+
+            <p class="eyebrow">
+                Get In Touch
+            </p>
+
+            <h2 id="contact-title">
+                Contact Me
+            </h2>
+
+            <p>
+                Have a question about my work or want to discuss
+                a web development project? Use the form to send
+                a message.
+            </p>
+
+            <p>
+                All required fields are checked with JavaScript
+                before the form can be submitted.
+            </p>
+
+        </div>
+
+        <form
+            id="contactForm"
+            class="contact-form"
+            novalidate>
+
+            <div class="form-group">
+
+                <label for="name">
+                    Name
+                    <span aria-hidden="true">*</span>
+                </label>
+
+                <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    autocomplete="name"
+                    required
+                    aria-describedby="nameError">
+
+                <p
+                    id="nameError"
+                    class="form-error"
+                    aria-live="polite">
+                </p>
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="email">
+                    Email
+                    <span aria-hidden="true">*</span>
+                </label>
+
+                <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    required
+                    aria-describedby="emailError">
+
+                <p
+                    id="emailError"
+                    class="form-error"
+                    aria-live="polite">
+                </p>
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="message">
+                    Message
+                    <span aria-hidden="true">*</span>
+                </label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    required
+                    aria-describedby="messageError"></textarea>
+
+                <p
+                    id="messageError"
+                    class="form-error"
+                    aria-live="polite">
+                </p>
+
+            </div>
+
+            <button
+                class="button"
+                type="submit">
+                Send Message
+            </button>
+
+            <p
+                id="formStatus"
+                class="form-status"
+                role="status"
+                aria-live="polite">
+            </p>
+
+        </form>
+
+    </div>
+
+</section>
+```
+
+</main>
+
+<footer class="site-footer">
+
+```
+<div class="container">
+
+    <p>
+        &copy; 2026 Robert Joseph Carter. Portfolio Project.
+    </p>
+
+</div>
+```
+
+</footer>
+
+</body>
+</html>
