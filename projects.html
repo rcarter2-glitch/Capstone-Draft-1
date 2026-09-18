@@ -1,131 +1,253 @@
+     <!DOCTYPE html>
 
-```html
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta
-        name="description"
-        content="Robert Carter's Madden league management project."
-    >
-    <title>Projects | Robert Carter</title>
-    <link rel="stylesheet" href="style.css">
+
+```
+<meta
+    name="description"
+    content="Robert Carter's web development projects and Madden league management website."
+>
+
+<title>Robert Carter | Projects</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+```
+
 </head>
 
 <body>
-    <header>
-        <nav class="navbar" aria-label="Main navigation">
-            <a class="logo" href="index.html">Robert Carter</a>
+
+<header class="site-header">
+
+```
+<nav class="navbar" aria-label="Main navigation">
+
+    <a class="logo" href="index.html">
+        Robert Carter
+    </a>
+
+    <button
+        id="menuButton"
+        class="menu-button"
+        type="button"
+        aria-expanded="false"
+        aria-controls="navLinks"
+        aria-label="Open navigation menu">
+
+        <span aria-hidden="true">☰</span>
+        <span class="menu-button-text">Menu</span>
+
+    </button>
+
+    <ul id="navLinks" class="nav-links">
+
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+
+        <li>
+            <a class="active" aria-current="page" href="projects.html">
+                Projects
+            </a>
+        </li>
+
+        <li>
+            <a href="about.html">
+                About / Contact
+            </a>
+        </li>
+
+    </ul>
+
+</nav>
+```
+
+</header>
+
+<main>
+
+```
+<section class="page-heading">
+
+    <div class="container">
+
+        <p class="eyebrow">My Work</p>
+
+        <h1>Projects</h1>
+
+        <p class="lead">
+            Here are examples of websites and interactive tools
+            I've created while developing my web development skills.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="section" aria-labelledby="madden-title">
+
+    <div class="container">
+
+        <div class="project-card">
+
+            <div>
+
+                <p class="eyebrow">Featured Project</p>
+
+                <h2 id="madden-title">
+                    Madden League Management Website
+                </h2>
+
+                <p>
+                    This website was created to organize information
+                    for an online Madden football league.
+                </p>
+
+                <p>
+                    The goal is to make schedules, league information,
+                    and player statistics easier to access than
+                    relying entirely on Discord messages.
+                </p>
+
+                <a
+                    class="button"
+                    href="https://carterprince495-prog.github.io/the-league/index.html"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    View Live Project
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section section-alt" aria-labelledby="features-title">
+
+    <div class="container">
+
+        <h2 id="features-title">
+            Project Features
+        </h2>
+
+        <ul class="feature-list">
+
+            <li>
+                Weekly Madden game scheduling
+            </li>
+
+            <li>
+                League statistics tracking
+            </li>
+
+            <li>
+                Player-focused information
+            </li>
+
+            <li>
+                Responsive design for mobile and desktop
+            </li>
+
+            <li>
+                Simple navigation
+            </li>
+
+            <li>
+                Interactive JavaScript features
+            </li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+<section class="section" aria-labelledby="interaction-title">
+
+    <div class="container">
+
+        <p class="eyebrow">
+            JavaScript Interaction
+        </p>
+
+        <h2 id="interaction-title">
+            League Week Demonstration
+        </h2>
+
+        <p>
+            Click the button or press Enter or Space while the
+            button is focused to advance the league week.
+        </p>
+
+        <div class="demo-box">
+
+            <p
+                id="weekText"
+                class="week-text"
+                aria-live="polite">
+                Current League Week: 1
+            </p>
 
             <button
-                id="menuButton"
-                class="menu-button"
-                aria-expanded="false"
-                aria-controls="navLinks">
-                Menu
+                id="weekButton"
+                class="button"
+                type="button">
+                Advance League Week
             </button>
 
-            <ul id="navLinks" class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-            </ul>
-        </nav>
-    </header>
+        </div>
 
-    <main>
-        <section class="page-heading">
-            <p class="eyebrow">Featured Project</p>
+    </div>
 
-            <h1>Madden League Management Website</h1>
+</section>
 
-            <p>
-                A web-based tool designed to help Madden players manage
-                weekly league schedules and track statistics.
-            </p>
+<section class="section section-alt" aria-labelledby="technology-title">
 
-            <a
-                class="button"
-                href="https://carterprince495-prog.github.io/the-league/index.html"
-                target="_blank"
-                rel="noopener noreferrer">
-                Open Live Project
-            </a>
-        </section>
+    <div class="container">
 
-        <section class="section project-details">
-            <div>
-                <h2>The Problem</h2>
+        <h2 id="technology-title">
+            Technologies Used
+        </h2>
 
-                <p>
-                    Madden leagues that are organized through Discord can
-                    become difficult to manage as the number of players and
-                    weekly games increases. Important information can be
-                    spread across Discord messages, making it harder for
-                    players to know when games are scheduled or how their
-                    statistics compare with other players.
-                </p>
-            </div>
+        <div class="skills">
 
-            <div>
-                <h2>The Solution</h2>
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>Responsive Design</span>
+            <span>Accessibility</span>
+            <span>GitHub Pages</span>
 
-                <p>
-                    My project creates a central website where league members
-                    can find their weekly schedule and view important league
-                    statistics. Instead of searching through Discord messages,
-                    players can use the website to find the information they
-                    need.
-                </p>
-            </div>
-        </section>
+        </div>
 
-        <section class="section">
-            <h2>Project Features</h2>
+    </div>
 
-            <ul class="feature-list">
-                <li>Weekly Madden game scheduling</li>
-                <li>League statistics tracking</li>
-                <li>Player-focused information</li>
-                <li>Responsive design for phones and computers</li>
-                <li>Simple navigation for Discord communities</li>
-            </ul>
-        </section>
+</section>
+```
 
-        <section class="section demo-section">
-            <h2>JavaScript Demo</h2>
+</main>
 
-            <p>
-                Click the button to simulate updating the current league week.
-            </p>
+<footer class="site-footer">
 
-            <div class="week-display">
-                <p id="weekText">Current League Week: 1</p>
+```
+<div class="container">
 
-                <button id="weekButton" class="button">
-                    Advance League Week
-                </button>
-            </div>
-        </section>
+    <p>
+        &copy; 2026 Robert Joseph Carter. Portfolio Project.
+    </p>
 
-        <section class="section">
-            <h2>Skills Used</h2>
+</div>
+```
 
-            <div class="skills">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>Responsive Design</span>
-                <span>GitHub Pages</span>
-            </div>
-        </section>
-    </main>
+</footer>
 
-    <footer>
-        <p>&copy; 2026 Robert Joseph Carter. Portfolio Project.</p>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
-```
+         
